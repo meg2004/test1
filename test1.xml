@@ -4,7 +4,7 @@
       <block type="controls_repeat" id="187" inline="true">
         <value name="TIMES">
           <block type="math_number" id="194">
-            <field name="NUM">3</field>
+            <field name="NUM">6</field>
           </block>
         </value>
         <statement name="DO">
@@ -17,14 +17,23 @@
           </block>
         </statement>
         <next>
-          <block type="oled_cleardisplay" id="220">
-            <next>
-              <block type="oled_drawtext" id="245">
-                <field name="TEXT">hello megha!</field>
-                <next>
-                  <block type="movement_stop" id="88"></block>
-                </next>
+          <block type="controls_repeat" id="267" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="274">
+                <field name="NUM">6</field>
               </block>
+            </value>
+            <statement name="DO">
+              <block type="robot_delay" id="276" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="283">
+                    <field name="NUM">5000</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="movement_stop" id="88"></block>
             </next>
           </block>
         </next>
