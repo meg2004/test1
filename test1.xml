@@ -1,46 +1,23 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="296" x="25" y="-102">
+  <block type="movement_forward" id="306" x="-41" y="36">
     <next>
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="controls_repeat" id="187" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="194">
-                <field name="NUM">6</field>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="robot_delay" id="143" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="150">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
-              </block>
-            </statement>
-            <next>
-              <block type="controls_repeat" id="267" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="274">
-                    <field name="NUM">6</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="robot_delay" id="276" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="283">
-                        <field name="NUM">5000</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-                <next>
-                  <block type="movement_stop" id="88"></block>
-                </next>
-              </block>
-            </next>
+      <block type="robot_delay" id="308" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="315">
+            <field name="NUM">3000</field>
           </block>
-        </next>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="movement_right" id="334" x="-31" y="182">
+    <next>
+      <block type="robot_delay" id="336" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="343">
+            <field name="NUM">3000</field>
+          </block>
+        </value>
       </block>
     </next>
   </block>
