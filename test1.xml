@@ -17,7 +17,16 @@
           </block>
         </statement>
         <next>
-          <block type="movement_stop" id="88"></block>
+          <block type="oled_cleardisplay" id="220">
+            <next>
+              <block type="oled_drawtext" id="245">
+                <field name="TEXT">hello megha!</field>
+                <next>
+                  <block type="movement_stop" id="88"></block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
