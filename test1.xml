@@ -8,7 +8,46 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="353"></block>
+          <block type="movement_right" id="364">
+            <next>
+              <block type="robot_delay" id="379" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="386">
+                    <field name="NUM">3000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_reverse" id="396">
+                    <next>
+                      <block type="robot_delay" id="397" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="398">
+                            <field name="NUM">3000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_left" id="408">
+                            <next>
+                              <block type="robot_delay" id="409" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="410">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="353"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
