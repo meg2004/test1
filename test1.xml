@@ -17,11 +17,7 @@
           </block>
         </statement>
         <next>
-          <block type="movement_left" id="25">
-            <next>
-              <block type="movement_stop" id="6"></block>
-            </next>
-          </block>
+          <block type="movement_stop" id="6"></block>
         </next>
       </block>
     </next>
